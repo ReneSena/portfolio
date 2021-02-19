@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.section`
 	width: 100%;
-	height: 100%;
+	height: 100vh;
 	background-color: #f5f5f5;
 	display: flex;
 	align-items: center;
@@ -22,5 +22,4 @@ export const Avatar = styled.div`
 	background-repeat: no-repeat;
 	background-size: cover;
 	box-shadow: 0 0 0 5px #333;
-	z-index: 0;
 `;
