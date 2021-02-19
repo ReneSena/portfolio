@@ -11,8 +11,8 @@ export const Container = styled.header`
 	top: 0;
 	left: 0;
 	border-bottom: 0.2px dashed rgba(0, 0, 0, 0.1);
-
 	backdrop-filter: blur(5px);
+	z-index: 100;
 `;
 
 export const Title = styled.h1`
