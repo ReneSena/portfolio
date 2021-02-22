@@ -1,4 +1,5 @@
-import styled from "styled-components";
+import styled, { css } from 'styled-components';
+import { breakpointsMedia } from '../../../utils/breakpointsMedia';
 
 export const SocialWrapper = styled.nav``;
 
@@ -15,11 +16,26 @@ SocialWrapper.List = styled.ul`
 
 	&::before,
 	&::after {
-		content: "";
+		content: '';
 		width: 2px;
 		height: 80px;
 		background-color: ${({ theme }) => theme.colors.grey100};
 	}
+
+	${breakpointsMedia({
+		xs: css`
+			position: absolute;
+			bottom: -20%;
+			left: 50%;
+			transform: translateX(-50%);
+			flex-direction: row;
+
+			&::before,
+			&::after {
+				display: none;
+			}
+		`,
+	})}
 `;
 
 SocialWrapper.Item = styled.li``;

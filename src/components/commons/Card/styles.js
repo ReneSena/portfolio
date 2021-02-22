@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-export const CardWrapper = styled.div`
+export const CardWrapper = styled.a`
 	max-height: 350px;
 	border-radius: 5px;
 	border: 1px solid #c1c1c1;

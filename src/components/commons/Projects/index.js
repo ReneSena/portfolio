@@ -24,7 +24,6 @@ function Projects() {
 				}}>
 				{listProjects.map((project) => (
 					<Card
-						href={project.url}
 						key={project.src}
 						url={project.src}
 						alt={project.alt}

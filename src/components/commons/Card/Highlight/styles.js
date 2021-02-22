@@ -33,7 +33,12 @@ CardWrapper.Image = styled.img`
 	max-width: 100%;
 	object-fit: cover;
 	border-radius: 5px;
-	height: 250px;
+
+	${breakpointsMedia({
+		md: css`
+			height: 250px;
+		`,
+	})}
 `;
 
 CardWrapper.Footer = styled.div`

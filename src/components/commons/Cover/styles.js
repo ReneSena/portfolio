@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.section`
 	background-color: ${({ theme }) => theme.colors.black};
@@ -23,7 +23,7 @@ export const Avatar = styled.div`
 	border-radius: 50%;
 	filter: sepia(50%);
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)),
-		url("https://avatars.githubusercontent.com/u/36897083?s=400&u=f1b8e17fb00e6d7bf8482e20f2d7efa442a2433e&v=4");
+		url('https://avatars.githubusercontent.com/u/36897083?s=400&u=f1b8e17fb00e6d7bf8482e20f2d7efa442a2433e&v=4');
 	background-repeat: no-repeat;
 	background-size: cover;
 	border: 3px solid ${({ theme }) => theme.colors.white};
