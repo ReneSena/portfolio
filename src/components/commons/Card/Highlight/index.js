@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-import { CardWrapper } from "./styles";
+import { CardWrapper } from './styles';
 
 function CardHighlight({ url, title, alt, description, size }) {
 	return (

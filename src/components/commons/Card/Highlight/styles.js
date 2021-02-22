@@ -1,7 +1,8 @@
-import styled from "styled-components";
+import styled, { css } from 'styled-components';
+import { breakpointsMedia } from '../../../../utils/breakpointsMedia';
 
 export const CardWrapper = styled.div`
-	max-height: 350px;
+	height: auto;
 	border-radius: 5px;
 	border: 1px solid #c1c1c1;
 	padding: 10px;
@@ -12,9 +13,14 @@ export const CardWrapper = styled.div`
 	flex: 1 350px;
 	transition: all 200ms linear;
 	cursor: pointer;
-	display: flex;
-	align-items: center;
 	margin-bottom: 24px;
+
+	${breakpointsMedia({
+		md: css`
+			display: flex;
+			align-items: center;
+		`,
+	})}
 
 	&:hover {
 		transform: scale(0.98) translateY(-5px);
