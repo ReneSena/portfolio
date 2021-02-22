@@ -5,8 +5,8 @@ import { Galaxy } from "./styles";
 function AnimationGalaxy() {
 	return (
 		<Galaxy>
-			<div class="galaxy">
-				<div class="stars"></div>
+			<div className="galaxy">
+				<div className="stars"></div>
 			</div>
 		</Galaxy>
 	);

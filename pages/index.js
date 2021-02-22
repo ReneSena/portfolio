@@ -4,28 +4,15 @@ import Card from "../src/components/commons/Card";
 import Header from "../src/components/commons/Header";
 import Footer from "../src/components/commons/Footer";
 import Main from "../src/components/commons/Main";
+import Projects from "../src/components/commons/Projects";
 
 export default function Home() {
 	return (
 		<>
-			<Header />
 			<Cover />
-			<Main>
-				<ul
-					style={{
-						display: "flex",
-						alignItems: "center",
-						justifyContent: "space-evenly",
-						flexWrap: "wrap",
-						gap: "24px",
-					}}
-				>
-					<Card />
-					<Card />
-					<Card />
-					<Card />
-					<Card />
-				</ul>
+			<Header />
+			<Main text="Meus Projetos">
+				<Projects />
 			</Main>
 			<Footer />
 		</>

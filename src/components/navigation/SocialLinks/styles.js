@@ -7,7 +7,7 @@ SocialWrapper.List = styled.ul`
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	gap: 5px;
+	gap: 30px;
 	position: absolute;
 	top: 50%;
 	left: 10%;
@@ -17,8 +17,8 @@ SocialWrapper.List = styled.ul`
 	&::after {
 		content: "";
 		width: 2px;
-		height: 60px;
-		background-color: ${({ theme }) => theme.colors.gray};
+		height: 80px;
+		background-color: ${({ theme }) => theme.colors.grey100};
 	}
 `;
 
