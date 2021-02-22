@@ -1,11 +1,12 @@
 import React from "react";
+import Brand from "../../navigation/Brand";
 import NavBar from "../../navigation/NavBar";
-import { Container, Title } from "./styles";
+import { Container } from "./styles";
 
 function Header() {
 	return (
 		<Container>
-			<Title> {`<Rene.Sena />`} </Title>
+			<Brand />
 			<NavBar />
 		</Container>
 	);

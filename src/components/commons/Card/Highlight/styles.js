@@ -12,6 +12,9 @@ export const CardWrapper = styled.div`
 	flex: 1 350px;
 	transition: all 200ms linear;
 	cursor: pointer;
+	display: flex;
+	align-items: center;
+	margin-bottom: 24px;
 
 	&:hover {
 		transform: scale(0.98) translateY(-5px);
@@ -24,6 +27,7 @@ CardWrapper.Image = styled.img`
 	max-width: 100%;
 	object-fit: cover;
 	border-radius: 5px;
+	height: 250px;
 `;
 
 CardWrapper.Footer = styled.div`

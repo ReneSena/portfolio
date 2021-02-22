@@ -1,4 +1,5 @@
 import React from "react";
+import { Heart } from "@styled-icons/boxicons-solid/Heart";
 
 import { Container } from "./styles";
 
@@ -7,7 +8,8 @@ function Footer() {
 
 	return (
 		<Container>
-			<p>Rene Sena {currentYear} @ Feito com Nextjs </p>
+			<p>Rene Sena {currentYear} @ Feito com Nextjs</p>
+			<Heart size="20" color="red" />
 		</Container>
 	);
 }

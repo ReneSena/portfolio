@@ -4,8 +4,9 @@ export const Container = styled.footer`
 	width: 100%;
 	height: 80px;
 	padding: 0 40px;
-	color: #222;
-	font-size: 16px;
+	color: ${({ theme }) => theme.colors.black};
+	background: ${({ theme }) => theme.colors.grey100};
+	font: ${({ theme }) => theme.typographys.paragraph1.font};
 	display: flex;
 	align-items: center;
 	justify-content: center;
