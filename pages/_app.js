@@ -1,7 +1,8 @@
-import { ThemeProvider } from "styled-components";
-import Head from "next/head";
-import theme from "../src/theme";
-import Reset from "../src/components/foundation/Reset";
+import { ThemeProvider } from 'styled-components';
+import PropTypes from 'prop-types';
+import Head from 'next/head';
+import theme from '../src/theme';
+import Reset from '../src/components/foundation/Reset';
 
 export default function App({ Component, pageProps }) {
 	return (
@@ -23,3 +24,15 @@ export default function App({ Component, pageProps }) {
 		</>
 	);
 }
+
+App.defaultProps = {
+	Component: '',
+	pageProps: '',
+};
+
+App.propTypes = {
+	// eslint-disable-next-line react/forbid-prop-types
+	Component: PropTypes.any,
+	// eslint-disable-next-line react/forbid-prop-types
+	pageProps: PropTypes.any,
+};

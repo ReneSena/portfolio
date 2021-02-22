@@ -3,6 +3,7 @@ import Card from '../Card';
 import CardHighlight from '../Card/Highlight';
 
 import listProjects from './content';
+import { ListWrapper } from './styles';
 
 function Projects() {
 	return (
@@ -13,15 +14,7 @@ function Projects() {
 				title="Quiz Cavaleiros do Zodíaco"
 				description="Quiz realizado durante a imersão Nextjs da Alura, com o tema de cavaleiros do zodíaco, onde esse projeto ficou entre os top 10 dentre as mais de 1500 propostas, sendo premiado com uma bolsa para o Bootcamp JAMSTACK."
 			/>
-			<ul
-				style={{
-					display: 'flex',
-					alignContent: 'center',
-					justifyContent: 'space-between',
-
-					flexWrap: 'wrap',
-					gap: '24px',
-				}}>
+			<ListWrapper>
 				{listProjects.map((project) => (
 					<Card
 						key={project.src}
@@ -30,7 +23,7 @@ function Projects() {
 						title={project.title}
 					/>
 				))}
-			</ul>
+			</ListWrapper>
 		</div>
 	);
 }

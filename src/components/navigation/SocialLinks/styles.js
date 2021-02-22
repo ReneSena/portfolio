@@ -14,14 +14,6 @@ SocialWrapper.List = styled.ul`
 	left: 10%;
 	transform: translateY(-50%);
 
-	&::before,
-	&::after {
-		content: '';
-		width: 2px;
-		height: 80px;
-		background-color: ${({ theme }) => theme.colors.grey100};
-	}
-
 	${breakpointsMedia({
 		xs: css`
 			position: absolute;
@@ -29,13 +21,14 @@ SocialWrapper.List = styled.ul`
 			left: 50%;
 			transform: translateX(-50%);
 			flex-direction: row;
-
-			&::before,
-			&::after {
-				display: none;
-			}
 		`,
-	})}
+	})}/* &::before,
+	&::after {
+		content: '';
+		width: 2px;
+		height: 80px;
+		background-color: ${({ theme }) => theme.colors.grey100};
+	} */
 `;
 
 SocialWrapper.Item = styled.li``;

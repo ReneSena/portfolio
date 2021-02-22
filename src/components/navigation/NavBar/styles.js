@@ -1,4 +1,5 @@
-import styled from "styled-components";
+import styled, { css } from 'styled-components';
+import { breakpointsMedia } from '../../../utils/breakpointsMedia';
 
 export const NavBarWrapper = styled.nav``;
 
@@ -6,15 +7,27 @@ NavBarWrapper.Menu = styled.ul`
 	display: flex;
 	align-items: center;
 	z-index: 100;
+
+	${breakpointsMedia({
+		md: css`
+			margin: 0 40px;
+		`,
+	})}
 `;
 
 NavBarWrapper.Item = styled.li`
-	margin: 0 40px;
 	position: relative;
+	margin: 0 20px;
+
+	${breakpointsMedia({
+		md: css`
+			margin: 0 40px;
+		`,
+	})}
 `;
 
 NavBarWrapper.Link = styled.a`
-	font-family: "Fira Code";
+	font-family: 'Fira Code';
 	font-size: 16px;
 	padding: 10px;
 	color: ${({ theme }) => theme.colors.white};

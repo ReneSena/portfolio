@@ -1,6 +1,6 @@
-import React from "react";
-
-import { WrapperSection } from "./styles";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { WrapperSection } from './styles';
 
 function Main({ children, text }) {
 	return (
@@ -10,5 +10,11 @@ function Main({ children, text }) {
 		</WrapperSection>
 	);
 }
+
+Main.propTypes = {
+	children: PropTypes.oneOfType([PropTypes.element, PropTypes.func])
+		.isRequired,
+	text: PropTypes.string.isRequired,
+};
 
 export default Main;

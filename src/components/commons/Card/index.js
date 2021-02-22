@@ -1,11 +1,12 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import { CardWrapper } from './styles';
 
-function Card({ url, title, alt, size }) {
+function Card({ url, title, alt }) {
 	return (
 		<>
-			<CardWrapper size={size}>
+			<CardWrapper>
 				<CardWrapper.Image src={url} alt={alt} />
 				<CardWrapper.Footer>
 					<CardWrapper.Title>{title}</CardWrapper.Title>
@@ -14,5 +15,11 @@ function Card({ url, title, alt, size }) {
 		</>
 	);
 }
+
+Card.propTypes = {
+	title: PropTypes.string.isRequired,
+	url: PropTypes.string.isRequired,
+	alt: PropTypes.string.isRequired,
+};
 
 export default Card;
