@@ -11,10 +11,10 @@ export default function Home() {
 		<>
 			<Header />
 			<Cover />
-			{/* <Main text="Meus Projetos">
+			<Main text="My Works">
 				<Projects />
 			</Main>
-			<Footer /> */}
+			{/* <Footer /> */}
 		</>
 	);
 }

@@ -1,34 +1,30 @@
 import styled from 'styled-components';
 
 export const CardWrapper = styled.a`
-	display: block;
-	width: 300px;
-	border-radius: 5px;
-	border: 0.2px solid #e4e4e4;
-	padding: 20px;
-	border-radius: 5px;
-	flex: 1 1 25%;
+	border-radius: 10px;
 	transition: all 200ms linear;
 	cursor: pointer;
+	box-shadow: 0 2px 50px rgba(0, 0, 0, 0.4);
 
 	&:hover {
 		transform: scale(0.98) translateY(-5px);
-		box-shadow: 0 3px 25px rgba(0, 0, 0, 0.4);
-		border-radius: 0;
 	}
 `;
 
 CardWrapper.Image = styled.img`
 	width: 100%;
+	margin: auto;
 	object-fit: cover;
-	border-radius: 5px;
+	border-radius: 10px;
+	display: inline-block;
 `;
 
 CardWrapper.Footer = styled.div`
-	padding: 10px;
+	padding: 20px;
+	text-align: left;
 	display: flex;
-	align-items: center;
-	justify-content: center;
+	align-items: flex-end;
+	justify-content: space-between;
 `;
 
 CardWrapper.Description = styled.div`
@@ -40,9 +36,15 @@ CardWrapper.Description = styled.div`
 `;
 
 CardWrapper.Title = styled.h2`
-	font: ${({ theme }) => theme.typographys.subTitle.font};
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+	color: #333333;
 `;
 
 CardWrapper.Text = styled.p`
-	font: ${({ theme }) => theme.typographys.paragraph2.font};
+	font-size: 14px;
+	font-weight: 600;
+	font-family: 'Open Sans', sans-serif;
+	color: #888;
+	margin-top: 12px;
 `;

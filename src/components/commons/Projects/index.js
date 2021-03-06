@@ -24,6 +24,7 @@ function Projects() {
 						url={project.src}
 						alt={project.alt}
 						title={project.title}
+						author={project.author}
 						passHref
 					/>
 				))}

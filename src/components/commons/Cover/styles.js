@@ -17,7 +17,7 @@ export const CoverWrapper = styled.section`
 	${breakpointsMedia({
 		md: css`
 			width: calc(100% - 200px);
-			height: calc(90% - 100px);
+			height: calc(90vh - 100px);
 			margin: 0 100px;
 			text-align: left;
 		`,
