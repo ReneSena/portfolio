@@ -1,5 +1,5 @@
-import { createGlobalStyle } from "styled-components";
-import { normalize } from "styled-normalize";
+import { createGlobalStyle } from 'styled-components';
+import { normalize } from 'styled-normalize';
 
 const GlobalStyle = createGlobalStyle`
 
@@ -21,7 +21,6 @@ const GlobalStyle = createGlobalStyle`
 		width: 100%;
 		min-height: 100vh;
 		font-family: 'Lato', sans-serif;
-
 	}
 
 	#__next {

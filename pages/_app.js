@@ -9,11 +9,12 @@ export default function App({ Component, pageProps }) {
 		<>
 			<Head>
 				<title>Rene Sena | Portfolio</title>
+				<link rel="icon" href="/icon.png" sizes="120x120" />
 
 				<link rel="preconnect" href="https://fonts.gstatic.com" />
 
 				<link
-					href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700&family=Lato:wght@400;700&display=swap"
+					href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
 					rel="stylesheet"
 				/>
 			</Head>

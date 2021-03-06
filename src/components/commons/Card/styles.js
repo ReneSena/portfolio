@@ -1,15 +1,13 @@
 import styled from 'styled-components';
 
 export const CardWrapper = styled.a`
-	max-height: 350px;
+	display: block;
+	width: 300px;
 	border-radius: 5px;
-	border: 1px solid #c1c1c1;
-	padding: 10px;
-	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-	backdrop-filter: blur(4px);
-	-webkit-backdrop-filter: blur(4px);
+	border: 0.2px solid #e4e4e4;
+	padding: 20px;
 	border-radius: 5px;
-	flex: 1 350px;
+	flex: 1 1 25%;
 	transition: all 200ms linear;
 	cursor: pointer;
 
@@ -21,7 +19,7 @@ export const CardWrapper = styled.a`
 `;
 
 CardWrapper.Image = styled.img`
-	max-width: 100%;
+	width: 100%;
 	object-fit: cover;
 	border-radius: 5px;
 `;
@@ -35,6 +33,7 @@ CardWrapper.Footer = styled.div`
 
 CardWrapper.Description = styled.div`
 	padding: 10px;
+
 	& h2 {
 		margin-bottom: 24px;
 	}

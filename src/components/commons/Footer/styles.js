@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.footer`
 	width: 100%;
@@ -12,4 +12,5 @@ export const Container = styled.footer`
 	justify-content: center;
 	flex: 1;
 	border-top: 0.2px dashed rgba(0, 0, 0, 0.1);
+	margin-top: 40px;
 `;
