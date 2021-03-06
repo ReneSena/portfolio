@@ -1,45 +1,59 @@
 import styled, { css } from 'styled-components';
 import { breakpointsMedia } from '../../../utils/breakpointsMedia';
 
-export const NavBarWrapper = styled.nav``;
+export const NavBarWrapper = styled.nav`
+	${breakpointsMedia({
+		xs: css`
+			width: 100%;
+		`,
+		md: css`
+			width: initial;
+		`,
+	})};
+`;
 
 NavBarWrapper.Menu = styled.ul`
 	display: flex;
 	align-items: center;
+	justify-content: space-around;
 	z-index: 100;
+	margin-top: 20px;
+	margin-bottom: 30px;
 
 	${breakpointsMedia({
 		md: css`
-			margin: 0 40px;
+			margin-right: 60px;
+			margin-bottom: 0;
+			margin-top: 0;
 		`,
-	})}
+	})};
 `;
 
 NavBarWrapper.Item = styled.li`
 	position: relative;
-	margin: 0 20px;
-
-	${breakpointsMedia({
-		md: css`
-			margin: 0 40px;
-		`,
-	})}
 `;
 
 NavBarWrapper.Link = styled.a`
-	font-family: 'Fira Code';
+	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
-	padding: 10px;
-	color: ${({ theme }) => theme.colors.white};
+	font-size: 400;
+	padding: 5px 10px;
+	color: ${({ theme }) => theme.colors.black};
 	display: inline-block;
-	border-radius: 20px 20px 20px 0;
-	box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.1);
 	transition: all 200ms ease-in-out;
 
+	${breakpointsMedia({
+		xs: css`
+			margin: 0;
+		`,
+		md: css`
+			margin-right: 60px;
+		`,
+	})}
+
 	&.active {
-		background: ${({ theme }) => theme.colors.secondary};
-		color: ${({ theme }) => theme.colors.white};
-		font-weight: 600;
+		color: ${({ theme }) => theme.colors.primary};
+		font-weight: 700;
 	}
 
 	&:hover {

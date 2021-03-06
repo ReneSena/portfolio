@@ -7,30 +7,36 @@ SocialWrapper.List = styled.ul`
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	flex-direction: column;
-	gap: 30px;
-	position: absolute;
+
+	/* height: 100vh; */
+	/* gap: 30px; */
+	/* position: absolute;
 	top: 50%;
 	left: 10%;
-	transform: translateY(-50%);
+	transform: translateY(-50%); */
 
 	${breakpointsMedia({
 		xs: css`
-			position: absolute;
+			/* position: absolute;
 			bottom: -20%;
-			left: 50%;
-			transform: translateX(-50%);
-			flex-direction: row;
+			left: 50%; */
+			/* transform: translateX(-50%); */
+			/* flex-direction: row; */
 		`,
-	})}/* &::before,
-	&::after {
-		content: '';
-		width: 2px;
-		height: 80px;
-		background-color: ${({ theme }) => theme.colors.grey100};
-	} */
+		md: css`
+			/* position: absolute;
+
+			left: 10%;
+			transform: translateY(-50%);
+			flex-direction: row; */
+		`,
+	})}
 `;
 
-SocialWrapper.Item = styled.li``;
+SocialWrapper.Item = styled.li`
+	&:not(:last-child) {
+		margin-right: 30px;
+	}
+`;
 
 SocialWrapper.Link = styled.a``;

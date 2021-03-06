@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled, { css } from 'styled-components';
 
 const Animation = css`
 	.galaxy-header {
@@ -275,7 +275,7 @@ const Animation = css`
 
 	.stars:before,
 	.stars:after {
-		content: "";
+		content: '';
 		position: absolute;
 		width: inherit;
 		height: inherit;
@@ -366,4 +366,5 @@ const Animation = css`
 
 export const Galaxy = styled.div`
 	${Animation};
+	z-index: -1;
 `;

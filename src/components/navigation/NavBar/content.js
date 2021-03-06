@@ -1,15 +1,19 @@
 const links = [
 	{
-		label: "Sobre",
-		url: "/",
+		label: 'Home',
+		url: '/',
 	},
 	{
-		label: "Blog",
-		url: "https://renesena.com.br/blog",
+		label: 'About',
+		url: '/about',
 	},
 	{
-		label: "Contato",
-		url: "/contacts",
+		label: 'Blog',
+		url: 'https://renesena.com.br/blog',
+	},
+	{
+		label: 'Contact',
+		url: '/contacts',
 	},
 ];
 

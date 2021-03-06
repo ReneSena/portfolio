@@ -1,20 +1,24 @@
-import React from "react";
-import SocialLinks from "../../navigation/SocialLinks";
-import AnimationGalaxy from "./Animation";
+import React from 'react';
+import SocialLinks from '../../navigation/SocialLinks';
+import AnimationGalaxy from './Animation';
 
-import { Avatar, Container, Title, Subtitle, Picture } from "./styles";
+import { CoverWrapper } from './styles';
 
 function Cover() {
 	return (
-		<Container>
-			<SocialLinks />
-			<AnimationGalaxy />
-			<Picture>
-				<Avatar />
-				<Title>Rene Sena</Title>
-				<Subtitle>Front-end Developer</Subtitle>
-			</Picture>
-		</Container>
+		<>
+			<CoverWrapper>
+				<CoverWrapper.Title>
+					Hello There, Welcome to my portflio!
+				</CoverWrapper.Title>
+				<CoverWrapper.Avatar src="/avatar.png" />
+				<AnimationGalaxy />
+				<CoverWrapper.Footer>
+					<p>Follow me</p>
+					<SocialLinks />
+				</CoverWrapper.Footer>
+			</CoverWrapper>
+		</>
 	);
 }
 

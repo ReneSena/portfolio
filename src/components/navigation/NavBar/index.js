@@ -1,12 +1,10 @@
-import React from "react";
-import { useRouter } from "next/router";
-import links from "./content";
-import { NavBarWrapper } from "./styles";
+import React from 'react';
+import { useRouter } from 'next/router';
+import links from './content';
+import { NavBarWrapper } from './styles';
 
 function NavBar() {
 	const router = useRouter();
-
-	console.log(router.asPath);
 
 	return (
 		<NavBarWrapper>
@@ -15,8 +13,7 @@ function NavBar() {
 					<NavBarWrapper.Item key={link.url}>
 						<NavBarWrapper.Link
 							href={link.url}
-							className={router.asPath === link.url && "active"}
-						>
+							className={router.asPath === link.url && 'active'}>
 							{link.label}
 						</NavBarWrapper.Link>
 					</NavBarWrapper.Item>
