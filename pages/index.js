@@ -14,7 +14,7 @@ export default function Home() {
 			<Main text="My Works">
 				<Projects />
 			</Main>
-			{/* <Footer /> */}
+			<Footer />
 		</>
 	);
 }

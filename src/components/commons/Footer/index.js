@@ -1,7 +1,7 @@
-import React from "react";
-import { Heart } from "@styled-icons/boxicons-solid/Heart";
+import React from 'react';
+import { Heart } from '@styled-icons/boxicons-solid/Heart';
 
-import { Container } from "./styles";
+import { Container } from './styles';
 
 function Footer() {
 	const currentYear = new Date().getFullYear();
