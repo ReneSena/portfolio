@@ -63,3 +63,9 @@ FormWrapper.Form = styled.form`
 		`,
 	})}
 `;
+
+FormWrapper.Feedback = styled.p`
+	font-size: 14px;
+	line-height: 2;
+	color: #333;
+`;
