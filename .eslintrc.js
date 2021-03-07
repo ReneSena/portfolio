@@ -4,30 +4,30 @@ module.exports = {
 		es6: true,
 	},
 	extends: [
-		"eslint:recommended",
-		"plugin:react/recommended",
-		"airbnb",
-		"eslint-config-prettier",
-		"prettier/react",
+		'eslint:recommended',
+		'plugin:react/recommended',
+		'airbnb',
+		'eslint-config-prettier',
 	],
-	parser: "babel-eslint",
+	parser: 'babel-eslint',
 	parserOptions: {
 		ecmaFeatures: {
 			jsx: true,
 		},
 		ecmaVersion: 12,
-		sourceType: "module",
+		sourceType: 'module',
 	},
-	plugins: ["react", "eslint-plugin-prettier"],
+	plugins: ['react', 'eslint-plugin-prettier', 'prettier'],
 	rules: {
-		"prettier/prettier": "error",
-		"react/jsx-filename-extension": [
-			"warn",
-			{ extensions: [".js", ".jsx"] },
+		'prettier/prettier': 'error',
+		'react/jsx-filename-extension': [
+			'warn',
+			{ extensions: ['.js', '.jsx'] },
 		],
-		"import/prefer-default-export": "off",
-		"import/no-extraneous-dependencies": "off",
+		'import/prefer-default-export': 'off',
+		'import/no-extraneous-dependencies': 'off',
 
-		"react/jsx-no-duplicate-props": ["error", { ignoreCase: false }],
+		'react/jsx-no-duplicate-props': ['error', { ignoreCase: false }],
+		'react/jsx-props-no-spreading': 'off',
 	},
 };
