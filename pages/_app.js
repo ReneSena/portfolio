@@ -1,3 +1,4 @@
+import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import PropTypes from 'prop-types';
 import Head from 'next/head';
@@ -26,14 +27,17 @@ export default function App({ Component, pageProps }) {
 	);
 }
 
-App.defaultProps = {
-	Component: '',
-	pageProps: '',
-};
-
 App.propTypes = {
-	// eslint-disable-next-line react/forbid-prop-types
-	Component: PropTypes.any,
-	// eslint-disable-next-line react/forbid-prop-types
-	pageProps: PropTypes.any,
+	Component: PropTypes.oneOfType([
+		PropTypes.elementType,
+		PropTypes.node,
+		PropTypes.func,
+		PropTypes.object,
+	]).isRequired,
+	pageProps: PropTypes.oneOfType([
+		PropTypes.elementType,
+		PropTypes.node,
+		PropTypes.func,
+		PropTypes.object,
+	]).isRequired,
 };

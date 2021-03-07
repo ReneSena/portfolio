@@ -27,5 +27,7 @@ InputWrapper.Input = styled.input`
 				resize: none;
 			`;
 		}
+
+		return null;
 	}}
 `;

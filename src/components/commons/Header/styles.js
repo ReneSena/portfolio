@@ -22,6 +22,8 @@ export const Container = styled.header`
 				backdrop-filter: blur(200px);
 			`;
 		}
+
+		return null;
 	}}
 
 	${breakpointsMedia({

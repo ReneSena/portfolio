@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Card from '../Card';
-import CardHighlight from '../Card/Highlight';
+// import CardHighlight from '../Card/Highlight';
 
 import listProjects from './content';
 import { ListWrapper } from './styles';

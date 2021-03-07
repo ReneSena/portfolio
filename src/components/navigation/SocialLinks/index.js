@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
 
-import socials from "./content";
-import { SocialWrapper } from "./styles";
+import socials from './content';
+import { SocialWrapper } from './styles';
 
 function SocialLinks() {
 	return (

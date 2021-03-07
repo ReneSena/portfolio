@@ -1,12 +1,12 @@
-import React from "react";
+import React from 'react';
 
-import { Galaxy } from "./styles";
+import { Galaxy } from './styles';
 
 function AnimationGalaxy() {
 	return (
 		<Galaxy>
 			<div className="galaxy">
-				<div className="stars"></div>
+				<div className="stars" />
 			</div>
 		</Galaxy>
 	);

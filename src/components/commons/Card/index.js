@@ -26,6 +26,7 @@ Card.propTypes = {
 	url: PropTypes.string.isRequired,
 	alt: PropTypes.string.isRequired,
 	href: PropTypes.string.isRequired,
+	author: PropTypes.string.isRequired,
 };
 
 export default Card;

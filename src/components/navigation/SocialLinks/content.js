@@ -1,3 +1,4 @@
+import React from 'react';
 import { Github } from '@styled-icons/bootstrap/Github';
 import { Linkedin } from '@styled-icons/bootstrap/Linkedin';
 import { Twitter } from '@styled-icons/bootstrap/Twitter';

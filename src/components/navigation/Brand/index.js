@@ -35,6 +35,7 @@ function Brand() {
 			<img
 				src="https://avatars.githubusercontent.com/u/36897083?s=460&u=f1b8e17fb00e6d7bf8482e20f2d7efa442a2433e&v=4"
 				width="60"
+				alt="Fotografia do Rene Sena, autor do site"
 			/>
 			<h2>Rene Sena</h2>
 		</Container>
