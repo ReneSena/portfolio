@@ -10,7 +10,7 @@ export const CoverWrapper = styled.section`
 	align-items: center;
 	justify-content: center;
 	flex-wrap: wrap;
-	z-index: 100;
+	z-index: 10;
 	padding: 20px;
 	text-align: center;
 

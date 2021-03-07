@@ -25,7 +25,7 @@ export const ButtonBase = styled.button`
 		cursor: not-allowed;
 	}
 
-	${(props) => props.primary && primary}
+	${(props) => props.variant === 'primary' && primary}
 
 	&:hover::not(:disabled) {
 		box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);

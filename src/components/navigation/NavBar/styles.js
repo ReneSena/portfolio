@@ -16,7 +16,7 @@ NavBarWrapper.Menu = styled.ul`
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-	z-index: 100;
+	z-index: 10;
 	margin-top: 20px;
 	margin-bottom: 30px;
 
