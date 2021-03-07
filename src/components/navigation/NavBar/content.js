@@ -13,7 +13,7 @@ const links = [
 	},
 	{
 		label: 'Contact',
-		url: '/contacts',
+		url: '/#contact',
 	},
 ];
 

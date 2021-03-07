@@ -7,6 +7,7 @@ const primary = css`
 
 export const ButtonBase = styled.button`
 	width: 100%;
+	max-width: 100%;
 	height: 50px;
 	font-family: 'Open Sans', sans-serif;
 	padding: 0 20px;

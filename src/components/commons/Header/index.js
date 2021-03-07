@@ -8,7 +8,9 @@ function Header() {
 
 	React.useEffect(() => {
 		const scroll = window.addEventListener('scroll', () => {
+			// eslint-disable-next-line no-unused-expressions
 			window.scrollY > window.innerHeight && setMenuTop(true);
+			// eslint-disable-next-line no-unused-expressions
 			window.scrollY < window.innerHeight && setMenuTop(false);
 		});
 
