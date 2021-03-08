@@ -8,10 +8,9 @@ export const Container = styled.footer`
 	align-items: center;
 	justify-content: center;
 	flex: 1;
-	margin-top: 40px;
+
 	font-family: 'Open Sans';
 	background: #f4f0ff;
-	border-radius: 10px;
 
 	& p {
 		margin-right: 12px;
@@ -21,6 +20,33 @@ export const Container = styled.footer`
 		md: css`
 			width: calc(100% - 200px);
 			margin: 0 100px;
+		`,
+	})}
+`;
+
+export const ContactWrapper = styled.section`
+	width: 100%;
+	height: 50vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background: linear-gradient(180deg, #fff, #c9bbe5);
+
+	& img {
+		margin-bottom: 20px;
+		width: 100%;
+	}
+
+	${breakpointsMedia({
+		md: css`
+			width: calc(100% - 200px);
+			margin: 0 100px;
+
+			& img {
+				margin-bottom: 20px;
+				width: 500px;
+			}
 		`,
 	})}
 `;

@@ -149,7 +149,8 @@ function FormContact({ propsModal }) {
 								!contactData.email ||
 								!contactData.message ||
 								!contactData.name
-							}>
+							}
+							fullWidth>
 							Send Message <SendPlane size="24" />
 						</Button>
 					</>
