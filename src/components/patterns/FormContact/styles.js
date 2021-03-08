@@ -4,7 +4,6 @@ import { breakpointsMedia } from '../../../utils/breakpointsMedia';
 export const FormWrapper = styled.div`
 	background-color: white;
 	width: 100%;
-
 	display: flex;
 	align-items: center;
 	flex-direction: column;
