@@ -6,8 +6,8 @@ const primary = css`
 `;
 
 export const ButtonBase = styled.button`
-	width: 100%;
-	max-width: 100%;
+	/* width: 100%; */
+	/* max-width: 100%; */
 	height: 50px;
 	font-family: 'Open Sans', sans-serif;
 	padding: 0 20px;
@@ -27,6 +27,11 @@ export const ButtonBase = styled.button`
 	}
 
 	${(props) => props.variant === 'primary' && primary}
+	${(props) =>
+		props.fullWidth &&
+		css`
+			width: 100%;
+		`}
 
 	&:hover::not(:disabled) {
 		box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
