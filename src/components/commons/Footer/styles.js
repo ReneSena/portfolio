@@ -26,7 +26,7 @@ export const Container = styled.footer`
 
 export const ContactWrapper = styled.section`
 	width: 100%;
-	height: 50vh;
+	height: 400px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -36,6 +36,10 @@ export const ContactWrapper = styled.section`
 	& img {
 		margin-bottom: 20px;
 		width: 100%;
+	}
+
+	& button {
+		margin-bottom: 24px;
 	}
 
 	${breakpointsMedia({
