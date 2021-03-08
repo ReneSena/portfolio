@@ -3,11 +3,15 @@ import styled, { css } from 'styled-components';
 export const InputWrapper = styled.div``;
 
 InputWrapper.Label = styled.label`
-	color: #333333;
 	font-weight: 700;
 	font-family: 'Open Sans';
 	display: block;
 	margin-bottom: 8px;
+	/* color: #333333; */
+
+	& .isRequired {
+		color: red;
+	}
 `;
 
 InputWrapper.Input = styled.input`

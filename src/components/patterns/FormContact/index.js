@@ -109,12 +109,12 @@ function FormContact({ propsModal }) {
 					alt="Ilustração com pessoa mexendo em dispositivos móveis"
 				/>
 			</FormWrapper.Ilustration>
-
 			<FormWrapper.Form onSubmit={handleSubmit}>
 				{!isFormSubmited && (
 					<>
 						<InputText
 							label="Name"
+							isRequired
 							id="name"
 							name="name"
 							placeholder="Your name"
@@ -124,6 +124,7 @@ function FormContact({ propsModal }) {
 
 						<InputText
 							label="E-mail"
+							isRequired
 							id="email"
 							type="email"
 							name="email"
@@ -134,6 +135,7 @@ function FormContact({ propsModal }) {
 
 						<InputText
 							as="textarea"
+							isRequired
 							label="Message"
 							id="message"
 							name="message"
