@@ -142,7 +142,12 @@ function FormContact({ propsModal }) {
 							onChange={handleChange}
 						/>
 
-						<Button>
+						<Button
+							disabled={
+								!contactData.email ||
+								!contactData.message ||
+								!contactData.name
+							}>
 							Send Message <SendPlane size="24" />
 						</Button>
 					</>
