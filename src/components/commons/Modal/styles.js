@@ -9,6 +9,18 @@ export const ModalWrapper = styled.div`
 	bottom: 0;
 	z-index: 1000;
 
+	#button-close-modal {
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		transition: all 0.3s linear;
+		cursor: pointer;
+
+		&:hover {
+			opacity: 0.5;
+		}
+	}
+
 	${({ isOpen }) => {
 		if (isOpen) {
 			return css`

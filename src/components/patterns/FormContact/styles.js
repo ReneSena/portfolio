@@ -4,19 +4,20 @@ import { breakpointsMedia } from '../../../utils/breakpointsMedia';
 export const FormWrapper = styled.div`
 	background-color: white;
 	width: 100%;
+	height: 100%;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	border-radius: 20px;
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
 
 	${breakpointsMedia({
 		md: css`
 			width: 1000px;
 			height: 600px;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			border-radius: 20px;
 			flex-direction: row;
 		`,
 	})}
@@ -51,12 +52,15 @@ FormWrapper.Ilustration = styled.div`
 
 FormWrapper.Form = styled.form`
 	width: 100%;
+	height: 100vh;
 	margin: auto;
 	padding: 20px;
 
 	${breakpointsMedia({
 		md: css`
 			width: 400px;
+			height: auto;
+
 			margin: auto;
 			padding: 0;
 		`,

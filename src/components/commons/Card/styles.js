@@ -1,26 +1,27 @@
 import styled from 'styled-components';
 
 export const CardWrapper = styled.a`
-	border-radius: 10px;
-	transition: all 200ms linear;
+	overflow: hidden;
 	cursor: pointer;
-	box-shadow: 0 2px 50px rgba(0, 0, 0, 0.4);
 
-	&:hover {
-		transform: scale(0.98) translateY(-5px);
+	&:hover img,
+	&:focus img {
+		transform: scale(1.05);
+		opacity: 0.8;
 	}
 `;
 
 CardWrapper.Image = styled.img`
 	width: 100%;
+	max-width: 100%;
 	margin: auto;
 	object-fit: cover;
-	border-radius: 10px;
 	display: inline-block;
+	transition: all 200ms linear;
 `;
 
 CardWrapper.Footer = styled.div`
-	padding: 20px;
+	padding-top: 20px;
 	text-align: left;
 	display: flex;
 	align-items: flex-end;
