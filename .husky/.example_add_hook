@@ -1,0 +1,6 @@
+npx husky add .husky/where "name command"
+
+for example:
+
+npx husky add .husky/pre-push "yarn lint"
+npx husky add .husky/commit-msg "yarn commitlint --edit $1"
