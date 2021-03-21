@@ -4,7 +4,6 @@ import { breakpointsMedia } from '../../../utils/breakpointsMedia';
 export const CoverWrapper = styled.section`
 	background-color: #f4f0ff;
 	position: relative;
-	border-radius: 20px;
 	display: flex;
 	flex: 1;
 	align-items: center;
@@ -16,9 +15,8 @@ export const CoverWrapper = styled.section`
 
 	${breakpointsMedia({
 		md: css`
-			width: calc(100% - 200px);
-			height: calc(90vh - 100px);
-			margin: 0 100px;
+			width: 100%;
+			height: calc(100vh - 100px);
 			text-align: left;
 		`,
 	})}
@@ -72,8 +70,8 @@ CoverWrapper.Footer = styled.footer`
 	${breakpointsMedia({
 		md: css`
 			position: absolute;
-			right: 20px;
-			bottom: 20px;
+			right: 100px;
+			bottom: 50px;
 		`,
 	})}
 `;

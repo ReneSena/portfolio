@@ -7,8 +7,8 @@ import Button from '../../commons/Button';
 import Loading from './animations/loading-message.json';
 import SuccessFeedback from './animations/success-message.json';
 import ErrorFeedback from './animations/error-message.json';
-
 import { FormWrapper } from './styles';
+import { createContactService } from '../../../services/contact';
 
 function FormContact({ propsModal }) {
 	const formStateVariants = {
@@ -62,47 +62,27 @@ function FormContact({ propsModal }) {
 		setIsFormSubmited(true);
 		setFormState(formStateVariants.LOADING);
 
-		fetch('https://contact-form-api-jamstack.herokuapp.com/message', {
-			method: 'POST',
-			headers: { 'Content-type': 'application/json' },
-			body: JSON.stringify(contactData),
-		})
+		createContactService(contactData)
 			.then((response) => {
-				if (!response.ok) {
-					throw Error(response.statusText);
-				}
-
-				return response;
-			})
-			.then(async (response) => {
-				if (response.ok || response.status === 201) {
-					await setTimeout(() => {
-						setFormState(formStateVariants.SUCCESS);
-
-						setTimeout(() => {
-							setFormState(formStateVariants.INITIAL);
-							setIsFormSubmited(false);
-							setContactData(initialValues);
-						}, 8000);
-					}, 5000);
-				}
+				if (response.ok || response.status === 201)
+					setFormState(formStateVariants.SUCCESS);
 			})
 			.catch((error) => {
-				if (error.status === 400 || !error.response) {
-					setTimeout(() => {
-						setFormState(formStateVariants.ERROR);
-
-						setTimeout(() => {
-							setFormState(formStateVariants.INITIAL);
-							setIsFormSubmited(false);
-						}, 8000);
-					}, 5000);
-				}
+				if (error.status === 400 || !error.response)
+					setFormState(formStateVariants.ERROR);
+			})
+			.finally(() => {
+				setTimeout(() => {
+					setFormState(formStateVariants.INITIAL);
+					setIsFormSubmited(false);
+					setContactData(initialValues);
+				}, 5000);
 			});
 	}
 
 	return (
 		<FormWrapper {...propsModal}>
+			{propsModal.close}
 			<FormWrapper.Ilustration>
 				<img
 					src="/contact.png"
@@ -195,7 +175,11 @@ FormContact.defaultProps = {
 };
 
 FormContact.propTypes = {
-	propsModal: PropTypes.objectOf(PropTypes.string).isRequired,
+	propsModal: PropTypes.oneOfType([
+		PropTypes.string,
+		PropTypes.object,
+		PropTypes.elementType,
+	]).isRequired,
 	nameAnimation: PropTypes.string,
 	loopAnimation: PropTypes.bool,
 	autoPlayAnimation: PropTypes.bool,

@@ -3,9 +3,7 @@ import { breakpointsMedia } from '../../../utils/breakpointsMedia';
 
 export const WrapperSection = styled.main`
 	width: 100%;
-	margin-top: 100px;
 	padding: 20px;
-	border-radius: 20px;
 	background-image: linear-gradient(180deg, #c9bbe5, #fff);
 
 	${breakpointsMedia({
@@ -16,8 +14,7 @@ export const WrapperSection = styled.main`
 
 	${breakpointsMedia({
 		md: css`
-			width: calc(100% - 200px);
-			margin: 100px 100px 0 100px;
+			width: 100%;
 			text-align: left;
 		`,
 	})}

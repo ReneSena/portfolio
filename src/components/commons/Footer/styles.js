@@ -18,8 +18,7 @@ export const Container = styled.footer`
 
 	${breakpointsMedia({
 		md: css`
-			width: calc(100% - 200px);
-			margin: 0 100px;
+			width: 100%;
 		`,
 	})}
 `;
@@ -44,8 +43,7 @@ export const ContactWrapper = styled.section`
 
 	${breakpointsMedia({
 		md: css`
-			width: calc(100% - 200px);
-			margin: 0 100px;
+			width: 100%;
 
 			& img {
 				margin-bottom: 20px;

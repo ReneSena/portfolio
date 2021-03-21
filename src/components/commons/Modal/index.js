@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { motion } from 'framer-motion';
-
+import { Close } from '@styled-icons/ionicons-outline/Close';
 import { ModalWrapper } from './styles';
 
 function Modal({ children, isOpen, onClose }) {
@@ -27,6 +27,15 @@ function Modal({ children, isOpen, onClose }) {
 				animate={isOpen ? 'open' : 'closed'}>
 				{children({
 					'data-modal-safe-area': 'true',
+					close: (
+						<Close
+							id="button-close-modal"
+							role="button"
+							size="30"
+							color="#888"
+							onClick={() => onClose()}
+						/>
+					),
 				})}
 			</motion.div>
 		</ModalWrapper>

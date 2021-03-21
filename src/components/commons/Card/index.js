@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { LinkExternal } from '@styled-icons/boxicons-regular/LinkExternal';
+import { ArrowRight } from '@styled-icons/bootstrap/ArrowRight';
 
 import { CardWrapper } from './styles';
 
@@ -14,7 +14,7 @@ function Card({ url, title, author, alt, href }) {
 						<CardWrapper.Title>{title}</CardWrapper.Title>
 						<CardWrapper.Text>{author}</CardWrapper.Text>
 					</div>
-					<LinkExternal size="24" color="#888" />
+					<ArrowRight size="24" color="#888" />
 				</CardWrapper.Footer>
 			</CardWrapper>
 		</>
