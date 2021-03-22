@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Heart } from '@styled-icons/boxicons-solid/Heart';
 import { SendPlane } from '@styled-icons/remix-fill';
 import Button from '../Button';
@@ -26,5 +27,9 @@ function Footer({ handleFormContact }) {
 		</>
 	);
 }
+
+Footer.propTypes = {
+	handleFormContact: PropTypes.func.isRequired,
+};
 
 export default Footer;
