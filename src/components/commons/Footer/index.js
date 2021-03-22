@@ -2,28 +2,20 @@ import React from 'react';
 import { Heart } from '@styled-icons/boxicons-solid/Heart';
 import { SendPlane } from '@styled-icons/remix-fill';
 import Button from '../Button';
-import Modal from '../Modal';
-import FormContact from '../../patterns/FormContact';
 
 import { Container, ContactWrapper } from './styles';
 
-function Footer() {
-	const [isOpen, setIsOpen] = React.useState(false);
+function Footer({ handleFormContact }) {
 	const currentYear = new Date().getFullYear();
 
 	return (
 		<>
-			{isOpen && (
-				<Modal onClose={() => setIsOpen(false)} isOpen={isOpen}>
-					{(propsModal) => <FormContact propsModal={propsModal} />}
-				</Modal>
-			)}
 			<ContactWrapper>
 				<img
 					src="/background_contact.svg"
 					alt="Ilustração de um homem sentado no computador"
 				/>
-				<Button type="button" onClick={() => setIsOpen(!isOpen)}>
+				<Button type="button" onClick={handleFormContact}>
 					Send me a message <SendPlane size="24" />
 				</Button>
 			</ContactWrapper>
