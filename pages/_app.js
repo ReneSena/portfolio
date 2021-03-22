@@ -1,9 +1,6 @@
 import React from 'react';
-import { ThemeProvider } from 'styled-components';
-import PropTypes from 'prop-types';
 import Head from 'next/head';
-import theme from '../src/theme';
-import Reset from '../src/components/foundation/Reset';
+import PropTypes from 'prop-types';
 
 export default function App({ Component, pageProps }) {
 	return (
@@ -19,10 +16,7 @@ export default function App({ Component, pageProps }) {
 					rel="stylesheet"
 				/>
 			</Head>
-			<ThemeProvider theme={theme}>
-				<Reset />
-				<Component {...pageProps} />
-			</ThemeProvider>
+			<Component {...pageProps} />
 		</>
 	);
 }

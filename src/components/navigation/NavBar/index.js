@@ -2,6 +2,7 @@ import React from 'react';
 import { useRouter } from 'next/router';
 import links from './content';
 import { NavBarWrapper } from './styles';
+import NextLink from '../../commons/Link';
 
 function NavBar() {
 	const router = useRouter();
@@ -11,11 +12,12 @@ function NavBar() {
 			<NavBarWrapper.Menu>
 				{links.map((link) => (
 					<NavBarWrapper.Item key={link.url}>
-						<NavBarWrapper.Link
+						<NextLink
 							href={link.url}
+							as={NavBarWrapper.Link}
 							className={router.asPath === link.url && 'active'}>
 							{link.label}
-						</NavBarWrapper.Link>
+						</NextLink>
 					</NavBarWrapper.Item>
 				))}
 			</NavBarWrapper.Menu>

@@ -6,13 +6,11 @@ const primary = css`
 `;
 
 export const ButtonBase = styled.button`
-	/* width: 100%; */
-	/* max-width: 100%; */
 	height: 50px;
 	font-family: 'Open Sans', sans-serif;
 	padding: 0 20px;
 	font-weight: 600;
-	line-height: 36px;
+	line-height: 50px;
 	outline: none;
 	border: 0;
 	border-radius: 5px;
