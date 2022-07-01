@@ -14,7 +14,7 @@
     "@commitlint/config-conventional": "^12.0.1",
     "@crello/react-lottie": "^0.0.11",
     "commitizen": "^4.2.3",
-    "framer-motion": "^3.10.0",
+    "framer-motion": "^6.3.16",
     "next": "latest",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
